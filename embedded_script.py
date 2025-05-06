@@ -1,10 +1,9 @@
-# 这是将会被嵌入到PyStand.exe中的Python脚本
 import os
 import sys
 
 
 def main():
-    msg = "这是从编译时嵌入的Python脚本运行的!"
+    msg = "hollo world!"
     print(msg)
     print()
 
@@ -12,7 +11,7 @@ def main():
     for path in sys.path:
         print(">", path)
 
-    os.MessageBox(msg, "嵌入式脚本")
+    os.MessageBox(msg, "hi")
 
 
 if __name__ == "__main__":
