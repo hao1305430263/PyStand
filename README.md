@@ -11,8 +11,7 @@ Python 独立部署环境。Python 3.5 以后，Windows 下面都有一个 Embed
 
 - Windows 下独立 Python 环境的启动器。
 - 自动加载 `PyStand.exe` 同级目录下面 `runtime` 子目录内的 Embedded Python。
-- 自动启动 `PyStand.exe` 同级目录下面的 `PyStand.int` 程序（Python 代码）。
-- 如果改名，会加载对应名称的 `.int` 文件，比如改为 `MyDemo.exe` 就会加载 `MyDemo.int`。
+- 自动启动 `PyStand.exe` 同级目录下面的 `embedded_script.py` 程序（Python 代码）。
 - 窗口程序，无 Console，但是如果在 cmd.exe 内运行，可以看到 print 的内容。
 - 会自动添加 `PyStand.exe` 同级目录下的 `site-packages` 目录，库可以放到里面。
 
@@ -78,7 +77,3 @@ PyStand 添加了一个 `os.MessageBox(msg, title)` 的接口，可以用来简�
 - [Wiki：常见问题](https://github.com/skywind3000/PyStand/wiki/Frequently-Asked-Questions)
 
 碰到疑问不妨快速过一下。
-
-
-
-
